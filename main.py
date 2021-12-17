@@ -31,9 +31,9 @@ Bot = Client(
 
 START_TEXT = """Hey {}
 
-I am Telegraph Uploader bot.
+I am Telegraph Uploader bot
 
-I can upload photo or video to telegraph link under 5MB.
+I can upload photo or video to telegraph link under 5MB
 
 Made With 💕 By @Tellybots"""
 HELP_TEXT = """Follow these steps:
