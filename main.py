@@ -33,7 +33,7 @@ START_TEXT = """**Hey {}
 
 I Am small media or file to telegra.ph link uploader bot.**
 
->> I can convert under 5MB photo or video to telegraph link.
+I can upload photo or video to telegraph link under 5MB.
 
 Made With 💕 By @Tellybots"""
 HELP_TEXT = """Follow these steps:**
