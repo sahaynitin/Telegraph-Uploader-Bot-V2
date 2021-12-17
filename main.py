@@ -29,20 +29,20 @@ Bot = Client(
     api_hash = os.environ["API_HASH"],
 )
 
-START_TEXT = """**Hey {}
+START_TEXT = """Hey {}
 
-I Am small media or file to telegra.ph link uploader bot.**
+I am Small media or file to telegraph link uploader bot.
 
 I can upload photo or video to telegraph link under 5MB.
 
 Made With 💕 By @Tellybots"""
-HELP_TEXT = """Follow these steps:**
+HELP_TEXT = """Follow these steps:
 
 ➠ Just give me a media under 5MB
 ➠ Then I will download it
-➠ I will then upload it to the telegra.ph link
+➠ I will then upload it to the telegraph link
 
-**Available Commands**
+Available Commands
 
 /start - Checking Bot Online
 /help - For more help
@@ -58,8 +58,6 @@ ABOUT_TEXT = """--**About Me**--
 👨‍💻 **Developer :** [Tellybots](https://github.com/tellybots)
 
 📢 **Channel :** [Tellybots](https://telegram.me/Tellybots)
-
-👥 **Group :** [Tellybots_Support](https://telegram.me/tellybots_support)
 
 🌐 **Source :** [Click here](https://t.me/tellybots_digital)
 
