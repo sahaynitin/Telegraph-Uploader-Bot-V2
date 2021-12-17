@@ -29,13 +29,13 @@ Bot = Client(
     api_hash = os.environ["API_HASH"],
 )
 
-START_TEXT = """**Hello {} 😌
-I am small media or file to telegra.ph link uploader bot.**
+START_TEXT = """**Hey {} 😌
 
->> `I can convert under 5MB photo or video to telegraph link.`
+I Am small media or file to telegra.ph link uploader bot.**
 
-Made by @FayasNoushad"""
+>> I can convert under 5MB photo or video to telegraph link.
 
+Made With 💕 By @Tellybots"""
 HELP_TEXT = """**Hey, Follow these steps:**
 
 ➠ Just give me a media under 5MB
@@ -51,17 +51,17 @@ HELP_TEXT = """**Hey, Follow these steps:**
 
 Made by @FayasNoushad"""
 
-ABOUT_TEXT = """--**About Me**-- 😎
+ABOUT_TEXT = """--**About Me**-- 
 
-🤖 **Name :** [Telegraph Uploader](https://telegram.me/{})
+🤖 **Name :** [Telegraph Uploader](https://telegram.me/tellybots)
 
-👨‍💻 **Developer :** [Fayas](https://github.com/FayasNoushad)
+👨‍💻 **Developer :** [Tellybots](https://github.com/tellybots)
 
-📢 **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
+📢 **Channel :** [Tellybots](https://telegram.me/Tellybots)
 
-👥 **Group :** [Developer Team](https://telegram.me/TheDeveloperTeam)
+👥 **Group :** [Tellybots_Support](https://telegram.me/tellybots_support)
 
-🌐 **Source :** [👉 Click here](https://github.com/FayasNoushad/Telegraph-Uploader-Bot-V2)
+🌐 **Source :** [Click here](https://t.me/tellybots_digital)
 
 📝 **Language :** [Python3](https://python.org)
 
@@ -69,7 +69,7 @@ ABOUT_TEXT = """--**About Me**-- 😎
 
 📡 **Server :** [Heroku](https://heroku.com)"""
 
-FORCE_SUBSCRIBE_TEXT = "<code>Sorry Dear You Must Join My Updates Channel for using me 😌😉....</code>"
+FORCE_SUBSCRIBE_TEXT = "Please Join My 🤖 Updates Channel to use me"
 
 START_BUTTONS = InlineKeyboardMarkup(
     [
@@ -208,17 +208,17 @@ async def telegraph_upload(bot, update):
             return
         except Exception as error:
             print(error)
-            await update.reply_text(text="Something wrong. Contact <a href='https://telegram.me/TheFayas'>Developer</a>.", disable_web_page_preview=True)
+            await update.reply_text(text="Something wrong. Contact Our Support Group <a href='https://telegram.me/tellybots_support'>Developer</a>.", disable_web_page_preview=True)
             return
     
     text = await update.reply_text(
-        text="<code>Downloading to My Server ...</code>",
+        text="Downloading to My Server ...",
         disable_web_page_preview=True
     )
     media = await update.download()
     
     await text.edit_text(
-        text="<code>Downloading Completed. Now I am Uploading to telegra.ph Link ...</code>",
+        text="Downloading Completed. Now I am Uploading to telegra.ph Link ...",
         disable_web_page_preview=True
     )
     
@@ -247,7 +247,7 @@ async def telegraph_upload(bot, update):
                     InlineKeyboardButton(text="Open Link", url=f"https://telegra.ph{response[0]}"),
                     InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
                 ],
-                [InlineKeyboardButton(text="⚙ Join Updates Channel ⚙", url="https://telegram.me/FayasNoushad")]
+                [InlineKeyboardButton(text="⚙ Join Updates Channel ⚙", url="https://telegram.me/tellybots")]
             ]
         )
     )
