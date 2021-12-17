@@ -29,11 +29,11 @@ Bot = Client(
     api_hash = os.environ["API_HASH"],
 )
 
-START_TEXT = """Hey {}
+START_TEXT = """Hey {} 
 
-I am Telegraph Uploader bot
+I am Telegram Telegraph Uploader bot
 
-I can upload photo or video to telegraph link under 5MB
+I can upload any photo or video to telegraph link under 5MB
 
 Made With 💕 By @Tellybots"""
 HELP_TEXT = """Follow these steps:
@@ -236,7 +236,7 @@ async def telegraph_upload(bot, update):
         return
     
     await text.edit_text(
-        text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>Join :-</b> @FayasNoushad",
+        text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>Join :-</b> @Tellybots_4u",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
