@@ -31,7 +31,7 @@ Bot = Client(
 
 START_TEXT = """Hey {}
 
-I am Small media or file to telegraph link uploader bot.
+I am Telegraph Uploader bot.
 
 I can upload photo or video to telegraph link under 5MB.
 
@@ -93,7 +93,6 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
     [
 	[
             InlineKeyboardButton('🏘 Home', callback_data='home'),
-            InlineKeyboardButton('❔ Help', callback_data='help'),
             InlineKeyboardButton('⛔ Close', callback_data='close')
         ]
     ]
