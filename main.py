@@ -71,20 +71,20 @@ FORCE_SUBSCRIBE_TEXT = "Please Join My 🤖 Updates Channel to use me"
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🤖 Update Channel', url='https://telegram.me/tellybots_4u'),
-        InlineKeyboardButton('💬 Support Group', url='https://telegram.me/tellybots_support')
+        InlineKeyboardButton('Update Channel', url='https://telegram.me/tellybots_4u'),
+        InlineKeyboardButton('Support Group', url='https://telegram.me/tellybots_support')
         ],[
-        InlineKeyboardButton('❔ Help', callback_data='help'),
-        InlineKeyboardButton('⛔ Close', callback_data='close')
+        InlineKeyboardButton('Help', callback_data='help'),
+        InlineKeyboardButton('Close', callback_data='close')
         ]]
-)
+   )
 
 HELP_BUTTONS = InlineKeyboardMarkup(
     [
 	[
-            InlineKeyboardButton('🏡 Home', callback_data='home'),
-            InlineKeyboardButton('👲 About', callback_data='about'),
-            InlineKeyboardButton('⛔ Close', callback_data='close')
+            InlineKeyboardButton('Home', callback_data='home'),
+            InlineKeyboardButton('About', callback_data='about'),
+            InlineKeyboardButton('Close', callback_data='close')
         ]
     ]
 )
@@ -92,8 +92,8 @@ HELP_BUTTONS = InlineKeyboardMarkup(
 ABOUT_BUTTONS = InlineKeyboardMarkup(
     [
 	[
-            InlineKeyboardButton('🏘 Home', callback_data='home'),
-            InlineKeyboardButton('⛔ Close', callback_data='close')
+            InlineKeyboardButton('Home', callback_data='home'),
+            InlineKeyboardButton('Close', callback_data='close')
         ]
     ]
 )
